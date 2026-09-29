@@ -1,12 +1,13 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path
 
 st.set_page_config(page_title="Retail Business Analytics", page_icon="📊", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/retail_sales.csv")
+    df = pd.read_csv(Path(__file__).resolve().parent / "data" / "retail_sales.csv")
     df["Order_Date"] = pd.to_datetime(df["Order_Date"], errors="coerce")
     df["Revenue"] = pd.to_numeric(df["Revenue"], errors="coerce")
     df["Profit"] = pd.to_numeric(df["Profit"], errors="coerce")
