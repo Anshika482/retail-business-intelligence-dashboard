@@ -1,46 +1,96 @@
-# Retail Business Analytics Dashboard
+# 📊 Retail Business Analytics Dashboard
 
-## Project Objective
-An end-to-end Data Analyst portfolio project demonstrating data quality validation, exploratory analysis, SQL business analysis, KPI reporting, interactive visualization and actionable recommendations.
+An end-to-end **Data Analyst portfolio project** demonstrating data quality validation, exploratory data analysis, SQL business analysis, KPI reporting, interactive visualization, and actionable business recommendations.
 
-## Business Problem
-A retail business needs a repeatable way to understand revenue, profit, product performance, regional trends and customer segments. The dashboard converts transactional data into decision-ready insights.
+## 🚀 Live Demo
 
-## Workflow
-**Raw Data → Data Quality Checks → Cleaning/Transformation → SQL Analysis → EDA → KPI Dashboard → Business Insights**
+👉 **[Open Live Dashboard](https://retail-business-intelligence-dashboard-3kk53fze8kzqsyzusdjnl3.streamlit.app/)**
 
-## Tech Stack
-Python | Pandas | SQL | Plotly | Streamlit | Git/GitHub
+## 📌 Project Objective
 
-## Key Features
-- Interactive date, region, category and customer-segment filters
-- Revenue, profit, orders, units and AOV KPIs
-- Monthly revenue/profit trend
-- Regional and category analysis
-- Top-product analysis
+The objective of this project is to transform raw retail transaction data into meaningful business insights using **Python, Pandas, SQL, Plotly, and Streamlit**.
+
+## 💼 Business Problem
+
+A retail business needs a repeatable way to understand:
+
+- Revenue and profit performance
+- Product performance
+- Regional trends
+- Customer segment contribution
+- Monthly business trends
+- Product profitability
+
+The dashboard converts transactional data into **decision-ready insights**.
+
+## 🔄 Analytical Workflow
+
+**Raw Data → Data Quality Checks → Cleaning & Transformation → SQL Analysis → EDA → KPI Dashboard → Business Insights**
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Pandas**
+- **SQL**
+- **Plotly**
+- **Streamlit**
+- **Git & GitHub**
+
+## 📊 Key Features
+
+- Interactive date, region, category, and customer-segment filters
+- Revenue, profit, orders, units sold, and AOV KPIs
+- Monthly revenue and profit trend analysis
+- Regional revenue analysis
+- Category revenue vs. profit analysis
+- Top 10 product analysis
 - Customer-segment contribution
-- Product profitability / margin table
+- Product profitability and margin analysis
 - Data-quality validation
-- SQL business queries
-- Automated business insights
-- Filtered CSV export
+- SQL business analysis queries
+- Automated business insights and recommendations
+- Filtered transaction data view
+- CSV export functionality
 
-## Files
-- `app.py` — interactive dashboard
-- `data/retail_sales.csv` — transactional dataset
-- `analysis/data_cleaning_and_eda.py` — data-quality and EDA workflow
-- `sql/retail_analysis_queries.sql` — business SQL analysis
-- `requirements.txt` — dependencies
+## 🧹 Data Quality & Preparation
 
-## Run Locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+The project validates the dataset before analysis through:
 
-## Resume Project Description
-**Retail Business Analytics Dashboard | Python, Pandas, SQL, Plotly, Streamlit**
-- Built an end-to-end analytics dashboard to monitor revenue, profit, AOV, regional performance, product profitability and customer segments.
-- Performed data-quality validation and exploratory analysis using Python/Pandas, including duplicate, missing-value and data-type checks.
-- Wrote SQL queries for KPI reporting, monthly trends, regional/category performance, customer segmentation and product profitability.
-- Developed interactive Plotly/Streamlit visualizations and translated analytical results into actionable business recommendations.
+- Missing-value checks
+- Duplicate-row checks
+- Duplicate Order ID checks
+- Invalid-date checks
+- Negative-revenue validation
+- Data-type validation
+- Profit-margin calculation
+
+## 🗄️ SQL Business Analysis
+
+SQL queries are included for business questions such as:
+
+- Revenue and profit analysis
+- Monthly sales trends
+- Regional performance
+- Category performance
+- Customer-segment analysis
+- Product performance
+- Product profitability
+
+## 📁 Project Structure
+
+```text
+retail-business-intelligence-dashboard/
+│
+└── retail-sales-analytics-dashboard/
+    ├── app.py
+    ├── requirements.txt
+    ├── README.md
+    │
+    ├── data/
+    │   └── retail_sales.csv
+    │
+    ├── analysis/
+    │   └── data_cleaning_and_eda.py
+    │
+    └── sql/
+        └── retail_analysis_queries.sql
